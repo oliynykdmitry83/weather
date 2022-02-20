@@ -10,12 +10,12 @@ body {
 }
 
 .container {
-   width: 300px;    
+   width: 300px;  
    background-color: #FFF;
    display: block;
    margin: 0 auto;
    border-radius: 10px;
-   padding-bottom : 50px;
+   padding-bottom : 120px;
    text-align: center;
 
 }
@@ -26,6 +26,7 @@ body {
    margin: 0 auto;
    font-size: 1em;
    color: #293251;
+   border-radius: 10px 10px 0 0
 }
 
 .cities {
@@ -34,4 +35,53 @@ body {
    margin: 0 auto;
    font-size: 1em;
    color: #293251;
+}
+
+.out {
+   width: 300px;
+   height: 260px;
+   background-color: #F4F9FF;
+   font-size: 1rem;
+}
+
+.out-temperature {
+   color: #293251;
+   font-size: 3em;
+   padding: 0;
+   margin: 0;
+   font-size: 4em;
+}
+
+.out-cloudiness {
+   margin-bottom: 10px;
+   color: #293251;
+   font-size: 1.2em;
+}
+
+.out-wind {
+   margin-bottom: 10px;
+   color: #293251;
+   font-size: 1.2em;
+}
+.out-humidity {
+   margin-bottom: 10px;
+   color: #293251;
+   font-size: 1.2em;
+}
+.out-pressure {
+   margin-bottom: 10px;
+   color: #293251;
+   font-size: 1.2em;
+}
+
+.out-city {
+   margin-bottom: 10px;
+   color: #293251;
+   font-size: 2em;
+}
+
+.cities-select {
+   border-radius: 3px;
+   color: #293251;
+   font-size: 1.2em;
 }
