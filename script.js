@@ -9,9 +9,21 @@ const cities = {
    703448: 'Kyiv',
    706483: 'Kharkiv'
 };
+const selectOfCities = document.createElement('select');
+selectOfCities.classList.add('cities-select');
+
+for (let key in cities) {
+   const location = document.createElement('option');
+   location.value = key;
+   location.textContent = cities[key];
+   selectOfCities.appendChild(location);
+}
+document.querySelector('.out').prepend(selectOfCities);
+console.log(selectOfCities);
 
 function getWeather() {
-   const cityId = document.querySelector('#city').value;
+   // const cityId = document.querySelector('#city').value;    
+   const cityId = selectOfCities.value;
       
    fetch(`${params.url}weather?id=${cityId}&units=metric&appid=${params.appid}`)
          .then((weather) => {
@@ -32,4 +44,5 @@ function showWeather(data) {
 }
 
 getWeather();
-document.querySelector('#city').onchange = getWeather;
+// document.querySelector('#city').onchange = getWeather;
+selectOfCities.addEventListener('change', getWeather);
