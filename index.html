@@ -10,28 +10,26 @@
 <body>
    <div class="container">
       <div class="title">
-         <h1>Choose a location</h1>
+         <h2>Choose a location</h2>
       </div>
-      <select class="cities">
-         <option value="">Kharkov</option>
-         <option value="39849">Kiev</option>
-         <option value="">Stockholm</option>
-         <option value="">NewYork</option>
+      <select id="city" class="cities-select">
+         <option value="2643743">London</option>
+         <option value="2968815">Paris</option>
+         <option value="625144">Minsk</option>
+         <option value="703448">Kyiv</option>
+         <option value="706483">Kharkiv</option>
       </select>
       
       <div class="out">
-         <div class="out-city">city</div>
-         <hr>
-         <p class="temp">10&deg;</p>
-         <p class="cloudiness">Clouds</p>
-         <hr>
-         <ul class="features">
-            <li>icon</li>
-         </ul>
-         <button class="button">Get weather</button>
          
+         <div class="out-temperature">temperature</div>
+         <div class="out-cloudiness">cloudness</div>
+         <div class="out-wind">Wind</div>
+         <div class="out-humidity">Humidity</div>
+         <div class="out-pressure">Pressure</div>
+         <div class="icon">icon</div>
+         <div class="out-city">city</div>
       </div>
-
    </div>
    <script src="/script.js"></script>
 </body>

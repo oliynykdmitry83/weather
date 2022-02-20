@@ -1,0 +1,37 @@
+html,
+body {
+   font-family: "Rimouski";
+}
+
+body {
+   box-sizing: border-box;
+   margin: 0 auto;
+   background-color: #293251;
+}
+
+.container {
+   width: 300px;    
+   background-color: #FFF;
+   display: block;
+   margin: 0 auto;
+   border-radius: 10px;
+   padding-bottom : 50px;
+   text-align: center;
+
+}
+
+.title {
+   text-align: center;
+   padding: 15px;
+   margin: 0 auto;
+   font-size: 1em;
+   color: #293251;
+}
+
+.cities {
+   text-align: center;
+   padding: 15px;
+   margin: 0 auto;
+   font-size: 1em;
+   color: #293251;
+}
